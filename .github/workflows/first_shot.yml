@@ -1,0 +1,9 @@
+name: first-shot
+on: push
+jobs: 
+  first-shot-job:
+    runs-on: windows-latest
+    steps: 
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "$(cat hello_word.txt)"
